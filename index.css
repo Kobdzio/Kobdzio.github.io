@@ -356,15 +356,29 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-@media(max-width: 400px) {
+@media(max-width: 700px) {
     .nav__item:not(:last-child) {
         margin-right: var(--gutter-normal);
     }
 }
 
-@media(max-width: 300px) {
-    .nav {
-        font-size: var(--font-size-small);
+@media(max-width: 500px) {
+    .nav__item:not(:last-child) {
+        margin-right: var(--gutter-small);
+    }
+
+    .nav__link {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 380px) {
+    .nav__item:not(:last-child) {
+        margin-right: 1.2rem;
+    }
+
+    .nav__link {
+        font-size: 1.3rem;
     }
 }
 
@@ -375,6 +389,7 @@ body:not(.user-is-tabbing) a:focus {
     text-decoration: none;
     color: inherit;
     transition: all .2s;
+    white-space: nowrap;
 }
 
 .nav__link::after {
